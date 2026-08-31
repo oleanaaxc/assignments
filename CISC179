@@ -1,1 +1,19 @@
+This is assignment 1
 
+Questions 1:
+
+*Note- very confused on what "number of languages" refers to as it is very vague and could refer to the variations of Python, a simple chart example, number of all programming languages, etc. I interpreted this as just making a simple chart- 
+I will reach out to confirm what was intended because I do want full grade.*
+
+|Number of Languages|Type of Language|
+|1|Compiled|
+|2|Interpreted|
+|3|Both|
+
+Question 2:
+A real-world example where Python performance is superior to compiled languages would be with PyPy. It can outdo C++ when a program handles complex data, such as with high-traffic web platforms. Python (PyPy) can change itself while running while C++ gets stuck with the pre-programmed choices to choose from.
+
+Question 3:
+
+
+Question 4:
