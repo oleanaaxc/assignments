@@ -1,1 +1,23 @@
+Part A:
+print("All the world's a stage,")
+print("And all the men and women merely players:")
+print("They have their exits and their entrances;")
+print("And one man in his yime plays many parts,")
+print("His acts being seven ages.")
 
+Part B:
+print("All the world's a stage,\nAnd all the men and women merely players:\nThey have their exits and their entrances;\nAnd one man in his time plays many parts,\nHis acts being seven ages.")
+
+Part C:
+127.0.0.1
+
+Part D:
+Building a loading bar is a situation where you would use it because flush=false and flush=true can be used to automatically send out buffer information.
+
+Part E:
+The keyword argument
+
+Challenges I faced during exercise:
+Understanding information from: YouTube Video.
+Understanding how you would like me to input these assignments into GitHub even after tutorial.
+Remembering apostrophes and parentheses.
