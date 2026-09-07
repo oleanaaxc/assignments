@@ -1,0 +1,5 @@
+print("All the world's a stage,")
+print("And all the men and women merely players:")
+print("They have their exits and their entrances;")
+print("And one man in his yime plays many parts,")
+print("His acts being seven ages.")
