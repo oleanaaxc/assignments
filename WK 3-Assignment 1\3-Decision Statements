@@ -1,98 +1,14 @@
-Question 1. Comparison operators
-
-Decision statements utilize comparison operators, and based on the True or False result, specific statements are executed.
-
-print(2 < 5)  # this gives True
-print(10 <= 10)  # this gives True
-x = 10
-print(20 < x)  # this gives False
-print("A" < "a")  # this gives True because the ASCII of "A" is 65 and "a" is 97. The Python interpreter converts the
-# character in ASCII number and then compare.
-print("Monday" > "Tuesday")  # this gives False because the first character of "Monday" (M) has a lower ASCII value
-# as compared to the first character of "Tuesday" (T)
-
+Comparison operators:
 Research and find the ASCII number of all the characters available on the keyboard using Python.
+I used this code to find them (unsure if you want me to put them all in here because it is very long:
+for i in range(32, 127):
+    print(chr(i), i)
 
 
 
-Question 2: 
-
-Logical operators (and, or, not)
-Do not write logical operators in all uppercase like AND, OR, NOT - Syntax Error
-
-and logical operator: Both expression's result need to be True to get the True output. If one expression's result is False, the output will be False regardless of the second expression's result. For example,
-
-10 > 4 and 50 < 100  # True and True is True
-10 < 4 and 50 < 100  # Here first expression is False, the output will be False
-or logical operator: Both expression's result need to be False to get the False output. If one expression's result is True, the output will be True regardless of the second expression's result. For example,
-
-10 < 4 or 50 > 100  # False and False is False
-10 > 4 and 50 > 100  # Here first expression is True, the output will be True
-not logical operator: Inverts the result
-
-10 > 4 # this is True
-not(10 > 4) # this is False
-
-
-Question 3:
-
-3. Bitwise logical operators (and, or, not, xor)
-Remember bitwise logical operators operates on bits
-
-To differentiate between logical operators and bitwise logical operators, Python uses distinct symbols for each.
-
-Name of the logical operator	Logical operator in Python	Bitwise logical operator in Python
-and	and	&
-or	or	|
-not	not	~
-xor	-	^
-Example bitwise or
-x = 0b1110 # 0b represents binary number, decimal 14
-y = 0b1011 # decimal 11
-result = x | y # Bitwise or, result in decimal format
-print(result)
-print(bin(result)) # bin() function converts decimal to binary
-
-# Proof
-# 1110
-# 1011
-# ----
-# 1111
-
-
-Question 4: Decision statements
-
-Find the largest two integers
-
-# Read two numbers
-number1 = int(input("Enter the first number: "))
-number2 = int(input("Enter the second number: "))
-
-# Choose the larger number
-if (number1 > number2):
-    larger_number = number1
-else:
-    larger_number = number2
-
-# Print the result
-print("The larger number is:", larger_number)
-Nested conditional statements
-
-x = 10
-
-if x > 5:  # True
-    if x == 6:  # False
-        print("nested: x == 6")
-    elif x == 10:  # True
-        print("nested: x == 10")
-    else:
-        print("nested: else")
-else:
-    print("else")
-
-
-Question 5: Problem-solving
+Problem-solving:
 a. Find the largest three integers just using if statements. Take user inputs and display the result.
+
 
 b. Identify multiple methods to determine if a number is even or odd. The user will input an integer, and the output will indicate whether it's "odd" or "even." The code should be organized into sections, with comments separating each part. For example
 
