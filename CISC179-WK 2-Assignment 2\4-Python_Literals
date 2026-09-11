@@ -1,0 +1,75 @@
+1. Literals:
+
+print(5 + 2 - 2)
+# 5
+
+print(5 / 2)
+# 2.5
+
+print(6 // 2) # // integer division
+# 3
+
+print(2. * 3)
+# 6.0
+
+print(2 < 4)
+# True
+
+print(2 >= 2)
+# True
+
+print("Hello"+"World")
+# HelloWorld
+
+print("bla" * 3)
+# blablabla
+
+print(2 * 3 ** 3)
+# 54
+
+print(5 * 25 // 13 + 100 / 2 % 13 // 2)
+# 14.0
+
+print(2 * 3 % 5)
+# 1
+
+print((2 % -4), (2 % 4), (2 ** 3 ** 2))
+# -2 2 512
+
+
+2. Data Type:
+
+type("Hello")
+# <class 'str'>
+
+type(1+"2")
+# TypeError
+
+type(1.)
+# <class 'float'>
+
+type('A')
+# <class 'str'>
+
+type(500)
+# <class 'int'>
+
+type(True)
+# <class 'bool'>
+
+type("False")
+# <class 'str'>
+
+
+3. Operator precedence:
+a) Write your arithmetic expression that uses at least one operator from each group and prove the operator's precedence. For example ``5 * 25 % 13 + 100 / -2 * 13 // 2 ** 3``
+
+print(8 ** 2 - 5 * -3)
+b) What will the output be without using Python after writing your arithmetic expression? Use the table below for your reference.
+
+79
+c) Please verify using Python to determine if you have done it correctly.
+yes.
+
+Challenges:
+Only understanding which symbol represented which type of math operation, but after studying & taking notes I understoos.
