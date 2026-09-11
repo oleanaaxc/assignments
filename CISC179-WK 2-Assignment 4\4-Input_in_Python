@@ -64,8 +64,8 @@ c. !var_1 = 200
 d. print = "print me"
 e. False = 0
 
-A.=
-B.=
-C.=
-D.=
-E.=
+A.= This works.
+B.= This works.
+C.= ! cannot start 'var'.
+D.= This works.
+E.= Does not work. False is a keyword not a funtion name.
