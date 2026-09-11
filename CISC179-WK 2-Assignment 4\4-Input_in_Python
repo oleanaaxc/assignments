@@ -1,0 +1,71 @@
+Question 1:
+a. Kilograms to Pounds
+Write a program that prompts the user to enter the weight of a person in kilograms and outputs the equivalent weight in pounds.
+Note: 1 kilogram = 2.2 pounds.
+
+My code: 
+weight_kg = float(input("Enter weight in kilograms: "))
+weight_lb = weight_kg * 2.2
+print("Weight in pounds:", weight_lb)
+
+Quesion 2:
+Interest on a credit card's unpaid balance is calculated using the average daily balance. Suppose that netBalance is the balance shown in the bill, payment is the payment made, d1 is the number of days in the billing cycle, and d2 is the number of days payment is made before the billing cycle.
+
+The average daily balance is:
+averageDailyBalance = (netBalance × d1 - payment × d2) / d1
+
+If the interest rate per month is, say, 0.0152, then the interest on the unpaid balance is:
+interest = averageDailyBalance × 0.0152
+
+Write a program that accepts as input netBalance, payment, d1, d2, and interest rate per month. The program outputs the interest.
+
+My code: 
+netBalance = float(input("Enter net balance: "))
+payment = float(input("Enter payment: "))
+d1 = int(input("Enter number of days in billing cycle: "))
+d2 = int(input("Enter number of days payment was made before billing cycle ended: "))
+interestRate = float(input("Enter monthly interest rate: "))
+averageDailyBalance = (netBalance * d1 - payment * d2) / d1
+interest = averageDailyBalance * interestRate
+print("Interest:", interest)
+
+Question 3:
+Two cars A and B leave an intersection at the same time. Car A travels west at an average speed of x miles per hour and car B travels south at an average speed of y miles per hour.
+Write a program that prompts the user to enter the average speed of both cars and the elapsed time (in hours and minutes) and outputs the shortest distance between the cars.
+
+My code : 
+speedA = float(input("Enter the average speed of Car A in mph: "))
+speedB = float(input("Enter the average speed of Car B in mph: "))
+hours = int(input("Enter elapsed hours: "))
+minutes = int(input("Enter elapsed minutes: "))
+
+time = hours + minutes / 60
+distanceA = speedA * time
+distanceB = speedB * time
+shortestDistance = (distanceA ** 2 + distanceB ** 2) ** 0.5
+print("Shortest distance between the cars:", shortestDistance, "miles")
+
+Also what I entered after "Enter" prompt:
+Enter the average speed of Car A in mph: 45
+Enter the average speed of Car B in mph: 60
+Enter elapsed hours: 2
+Enter elapsed minutes: 15
+Shortest distance between the cars: 168.75 miles
+
+
+Process finished with exit code 0
+
+Question 4:
+lease troubleshoot the following issues without using Python, and explain your reasoning.
+
+a. hello = "hello"
+b. _var = 100
+c. !var_1 = 200
+d. print = "print me"
+e. False = 0
+
+A.=
+B.=
+C.=
+D.=
+E.=
