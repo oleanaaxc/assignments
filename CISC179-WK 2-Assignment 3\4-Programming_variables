@@ -1,0 +1,78 @@
+Question 1:
+var1 = 10
+# Check the memory address of var1 by using the following statement
+print(hex(id(var1)))
+
+var1 = 100
+# Check the memory address of var1 again
+
+# Write your code here:
+1st address with var1 = 10 was 0x7ffb5352e598 and the 2ndwith var1 = 100 was 0x7ffbb1c8f0d8. There are two different adresses because both numbers are stored at different memory locations. After var1 was changed from 10 to 100 it began reffering to the memory address associated with 100 instead of 10.
+
+Question 2:
+var2 = 100
+# Write your print statement
+# Check the memory address of var2. Did the Python interpreter assign a new memory address or reuse the existing one?
+
+The interpreter assigned the same address. 
+
+# Write your code here:
+var2 = 100
+print(hex(id(var2)))
+
+Python typed out: 0x7ffbb1c8f0d8 as the memory address.
+
+Question 3:
+str1 = "Hello"
+str2 = "World"
+# Find out the memory addresses of each character in str1 and str2.
+# The following is the example
+print(hex(id(str1[0])), hex(id(str1[1])))  # where 0 is the first index and 1 is the second index
+
+Index 0- 0x7ffbb1c9e448
+Index 1- 0x7ffbb1c9e9b8
+
+Question 4:
+# Use the same method as described above to find the addresses of additional characters and complete the table below.
+# 0x7ffbb1c9e448 = H
+# 0x7ffbb1c9e9b8 = E
+# 0x7ffbb1c9eb08 = L
+# 0x7ffbb1c9eb08 = L
+# 0x7ffbb1c9eb98 = O
+# 0x7ffbb1c9e718 = W
+# 0x7ffbb1c9eb98 = O
+# 0x7ffbb1c9ec28 = R
+# 0x7ffbb1c9eb08 = L
+# 0x7ffbb1c9e988 = D
+
+Question 5:
+Let the variable x be dog and the variable y be cat. Write the values returned by the following operations: Try solving without writing in Python.
+x + y
+"the " + x + " chases the " + y
+x * 4
+
+x + y = dogcat
+"the " + x + " chases the " + y = the dog chases the cat
+x * 4 = dogdogdogdog
+
+Question 6:
+If x = 50. Use an assignment statement to increment the value of x by 1.
+x =+ 1
+
+Question 7:
+Please troubleshoot the following issues without using Python, and explain your reasoning.
+
+a. hello = "hello"
+b. _var = 100
+c. !var_1 = 200
+d. print = "print me"
+e. False = 0
+
+A= No issue.
+B= No issue.
+C= '!' Cannot start 'var'.
+D= No issue
+E= Does not work. False is a keyword not a funtion name.
+
+Challeges: 
+Only issue was accuracy with which functions do what.
