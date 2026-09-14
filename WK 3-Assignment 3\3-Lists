@@ -1,15 +1,49 @@
 a. Using a range function, generate a list of 100 integers and assign the list to my_list. Verify that the variable my_list data type is list. Use your favorite four methods and apply on the list. You can find the methods on Python Docs.
+Create list ofd 100 integers 1-100
+my_list=list(range(1,101))
+print(type(my_list))
+
+Method 1: add 101 to the end of the list
+my_list.append(101)
+print(my_list)
+
+Method 2: remove 50 from the list
+my_list.remove(50)
+print(my_list)
+
+Method 3: reverse the order of the list
+my_list.reverse()
+print(my_list)
+
+Method 4: sort the list from smallest to largest
+my_list.sort()
+print(my_list)
 
 b. Suppose that you have a list of 10 items long. How might you move the last three items from the end of the list to the beginning, keeping them in the same order?
+my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+my_list = my_list[-3:] + my_list[:-3]
+print(my_list)
 
 c. What would be the result of len([[1,2]] * 3)? Try to do it without coding and then verify using Python.
-
+3
 d. Create a list my-list-ten of 10 items that includes some duplicate entries. Then, generate a second list my-list-ten-mem that contains the memory addresses of the items from the list my-list-ten. Use Python to research and identify the unique and duplicate memory addresses.
+my_list_ten = [1, 2, 3, 2, 4, 5, 3, 6, 1, 7]
+
+my_list_ten_mem = []
+
+for item in my_list_ten:
+    my_list_ten_mem.append(id(item))
+print("Original list:")
+print(my_list_ten)
+print("Memory addresses:")
+print(my_list_ten_mem)
+
+The memory addresses were the same.
 
 e. Delete the list my-list-ten created in the above step.
-
+OK
 f. Create a new list my-new-list of the same 10 items used in my-list-ten. Generate memory addresses of the items in my-new-list and compare them with the memory addresses in my-list-ten-mem. Discuss what do you observe.
-
+My observation was that the same numbers(integers) had the same memory addresses even on two different lists.
 g. Suppose that you have the following list:
 
 x = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
