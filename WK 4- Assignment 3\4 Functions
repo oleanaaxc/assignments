@@ -1,13 +1,15 @@
 Question 1a:
+2.35 approx.
 
 Question 1b:
+I would use (*args) with the def or for functions being used to reverse values.
 
 Question 1c:
+It would also change the list/dictionary that is outside of the function. The operations that would likely due this would be append or remove. To minmize the risk I would have the originals saved.
 
 Question 1d:
+X would equal 5 below executes, after funct_2() executes x would equal 2.
 
 Question 2a:
+There are two "*" above c which causes the issue. With c* instead it accepts multiple.
 
-Question 2b:
-
-Challenges:
