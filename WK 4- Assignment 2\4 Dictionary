@@ -1,17 +1,87 @@
 Question 1a:
+my_dict = {"name": "Oleana", "age": "21", "city": "San Diego", "state": "California", "animal": "cat", "number": "7", "color": "blue", "occupation": "waitress", "food": "ramen", "language": "english" } print(my_dict)
 
 Question 1b:
+my_user_dict = {
+answer = "Y"
+while answer = "Y":
+ssn = input( "Enter SSN: ")
+name = input("Enter Name: ")
+my_user_dict[ssn] = name
+answer = input("Do you want to continue (Y/N)
+print (my_user_dict)
 
 Question 1c:
+my_tuple = [("Name", "Sarah Connor"),  ("Date of birth", "1 Jan 1980"),
+    ("Address", "1008 Black Mountain Drive", 92126),
+    ("Name", "Jim Hawkins")]
+my_dict = {}
+
+for item in my_tuple:
+    if len(item) != 2:
+        print("invalid key-value pair:", item)
+        print("Please use only one key and one value.")
+    else:
+        key = item[0]
+        value = item[1]
+
+        if key in my_dict:
+            print("Duplicate key:", key)
+            new_key = input("Please enter a different key:")
+            my_dict[new_key] = value
+        else:
+            my_dict[key] = value
+
+print(my_dict)
+
 
 Question 1d:
+my_list = [("Name", "Sarah Connor"), ("Date of birth", "1 Jan 1980"), ("Address", "1008 Black Mountain Drive", 92126), ("Name", "Jim Hawkins")]
+
+my_dict = {}
+
+for item in my_list:
+    if len(item) == 2:
+        key = item[0]
+        value = item[1]
+        my_dict[key] = value
+
+print(my_dict)
 
 Question 1e:
+code: text = "The tiger (Panthera tigris) is a large cat and a member of the genus Panthera native to Asia. It has a powerful, muscular body with a large head and paws, a long tail and orange fur with black, mostly vertical stripes. It is traditionally classified into nine recent subspecies, though some recognise only two subspecies, mainland Asian tigers and the island tigers of the Sunda Islands."
+
+words = text.split()
+
+word_count = {}
+
+for word in words:
+    if word in word_count:
+        word_count[word] = word_count[word] + 1
+    else:
+        word_count[word] = 1
+
+print(word_count)
+
+PYTHON OUTPUT:
+{'The': 1, 'tiger': 1, '(Panthera': 1, 'tigris)': 1, 'is': 2, 'a': 5, 'large': 2, 'cat': 1, 'and': 4, 'member': 1, 'of': 2, 'the': 3, 'genus': 1, 'Panthera': 1, 'native': 1, 'to': 1, 'Asia.': 1, 'It': 2, 'has': 1, 'powerful,': 1, 'muscular': 1, 'body': 1, 'with': 2, 'head': 1, 'paws,': 1, 'long': 1, 'tail': 1, 'orange': 1, 'fur': 1, 'black,': 1, 'mostly': 1, 'vertical': 1, 'stripes.': 1, 'traditionally': 1, 'classified': 1, 'into': 1, 'nine': 1, 'recent': 1, 'subspecies,': 2, 'though': 1, 'some': 1, 'recognise': 1, 'only': 1, 'two': 1, 'mainland': 1, 'Asian': 1, 'tigers': 2, 'island': 1, 'Sunda': 1, 'Islands.': 1}
+
 
 Question 2a:
+d_orig = {123: "Coconut"}
+d_copy = d_orig.copy()
+
+d_copy = {123: "Oleana"}
+
+PYTHON OUTPUT:
+{123: 'Coconut'}
+{123: 'Oleana'}
 
 Question 2b:
+I would use .copy() to make another copy of the original dictionary so that I can change the copy without anything happening to the original.
 
 Question 2c:
+my_dict = {[1, 2, 3]: "Print"}
+This creates an error because I used a list in a dictionary key which creates the unhashable error.
 
 Challenges:
