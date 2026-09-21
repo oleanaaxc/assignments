@@ -20,3 +20,6 @@ for i in range(2):
     insert(first_name, last_name, birth_month)
 
 print(patient)
+
+
+Does not let me upload video as it says it is too big of a file. Will send seperately.
