@@ -1,9 +1,22 @@
-Question 1:
+My final Python code:
 
-Question 2:
+patient = {}
 
-Question 3:
+def insert(first_name, last_name, birth_month):
+    record_number = len(patient) + 1
 
-Question 4:
+    patient[record_number] = {
+        "First Name": first_name,
+        "Last Name": last_name,
+        "Birth Month": birth_month
+    }
 
-Challenges:
+
+for i in range(2):
+    first_name = input("Enter patient's first name: ")
+    last_name = input("Enter patient's last name: ")
+    birth_month = int(input("Enter birth month when vaccine was administered: "))
+
+    insert(first_name, last_name, birth_month)
+
+print(patient)
