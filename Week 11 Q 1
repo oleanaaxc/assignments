@@ -1,0 +1,1 @@
+self.label1 = tkinter.Label(self.main_window, text='Programming is fun!')
